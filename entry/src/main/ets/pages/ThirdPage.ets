@@ -1,4 +1,7 @@
+import router from '@ohos.router'
 import { ButtonTest } from '../view/ButtonDemo'
+import { DatePickerDemo } from '../view/DatePickerDemo'
+
 @Entry
 @Component
 struct ThirdPage {
@@ -7,6 +10,9 @@ struct ThirdPage {
   build() {
     Row() {
       Column() {
+        Button('返回').onClick(() => {
+          router.back()
+        })
         Text(this.message)
           .fontSize(20)
           .fontWeight(FontWeight.Bold)
@@ -17,6 +23,8 @@ struct ThirdPage {
         }.width('100%')
 
         ButtonTest()
+        Divider().color(Color.Orange).strokeWidth(10).lineCap(LineCapStyle.Round).margin({ top: 5, bottom: 5 })
+        DatePickerDemo()
       }
       .width('100%')
     }

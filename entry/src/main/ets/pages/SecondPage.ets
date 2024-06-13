@@ -14,9 +14,14 @@ struct SecondPage {
 
         Text(this.paramA1)
           .fontSize(30)
-
         Button('返回').fontSize(40).onClick(()=>{
           router.back()
+        })
+
+        Button('jump ThirdPage').onClick(()=>{
+          router.replaceUrl({
+            url : 'pages/ThirdPage'
+          })
         })
       }
       .width('100%')
