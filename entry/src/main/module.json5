@@ -26,12 +26,17 @@
             "entities": [
               "entity.system.home"
             ],
-          //  主屏幕有图标点击入口类别
+            //  主屏幕有图标点击入口类别
             "actions": [
               "action.system.home"
             ]
           }
         ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET"
       }
     ]
   }
