@@ -11,6 +11,7 @@
   "version": "1.0.0",
   "dependencies": {
     //    "@ohos/pulltorefresh": "^2.0.5"
-    "@module/common" : "file:../StudyHarmony/common"
+    "@module/common" : "file:../StudyHarmony/common",
+    "@module/login" : "file:../StudyHarmony/login"
   }
 }
