@@ -1,6 +1,5 @@
 import router from '@ohos.router'
 import { ButtonTest } from '../view/ButtonDemo'
-import { CommonEventDemo } from '../view/CommonEventDemo'
 import { DatePickerDemo } from '../view/DatePickerDemo'
 
 @Entry
@@ -27,7 +26,6 @@ struct ThirdPage {
         Divider().color(Color.Orange).strokeWidth(10).lineCap(LineCapStyle.Round).margin({ top: 5, bottom: 5 })
         DatePickerDemo()
         Divider().color(Color.Orange).strokeWidth(10).lineCap(LineCapStyle.Round).margin({ top: 5, bottom: 5 })
-        CommonEventDemo()
 
       }
       .width('100%')

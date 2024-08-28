@@ -1,4 +1,5 @@
 {
+  "modelVersion": "5.0.0",
   "license": "",
   "devDependencies": {
     "@ohos/hypium": "1.0.6"
@@ -9,6 +10,6 @@
   "main": "",
   "version": "1.0.0",
   "dependencies": {
-//    "@ohos/pulltorefresh": "^2.0.5"
+    //    "@ohos/pulltorefresh": "^2.0.5"
   }
 }

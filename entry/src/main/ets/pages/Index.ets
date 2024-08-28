@@ -47,15 +47,6 @@ struct Index {
   }
 }
 
-/**
- * 按引用传递
- * @param $$
- */
-@Builder function overBuilder2($$: { paramA1: string }) {
-  Row() {
-    Text(`UseStateVarByReference: ${$$.paramA1} `)
-  }
-}
 
 @Component
 struct Parent {
@@ -64,7 +55,6 @@ struct Parent {
   build() {
     Column() {
       overBuilder(this.label)
-      overBuilder2({ paramA1: this.label })
     }.onClick(() => {
       console.log("U Click")
       this.label = "ArkTS"

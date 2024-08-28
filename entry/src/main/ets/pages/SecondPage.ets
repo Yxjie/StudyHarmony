@@ -3,7 +3,6 @@ import router from '@ohos.router'
 @Component
 struct SecondPage {
   @State message: string = 'Second Page'
-  @State paramA1: string = router.getParams()?.['message']
 
   build() {
     Row() {
@@ -12,8 +11,6 @@ struct SecondPage {
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
 
-        Text(this.paramA1)
-          .fontSize(30)
         Button('返回').fontSize(40).onClick(()=>{
           router.back()
         })
