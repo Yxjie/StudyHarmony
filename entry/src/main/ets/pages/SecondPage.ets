@@ -1,3 +1,4 @@
+import { MainPage } from '@module/common/src/main/ets/components/MainPage'
 import router from '@ohos.router'
 @Entry
 @Component
@@ -20,6 +21,7 @@ struct SecondPage {
             url : 'pages/ThirdPage'
           })
         })
+
       }
       .width('100%')
     }
