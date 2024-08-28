@@ -1,6 +1,8 @@
-@Entry
+import { ConstantRouter } from '@module/common/src/main/ets/constant/ConstantRouter';
+
+@Entry({routeName:ConstantRouter.LOGIN_PAGE})
 @Component
-struct Index {
+export struct Index {
 
   @State message: string = 'login module';
 

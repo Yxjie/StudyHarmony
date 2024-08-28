@@ -1,5 +1,7 @@
+import { ConstantRouter } from '@module/common'
 import router from '@ohos.router'
 import CompA from '../view/demo'
+import ('@module/login/Index')
 
 @Entry
 @Component
@@ -30,6 +32,10 @@ struct Index {
             }
           });
         })
+
+        Button('跳转Login Module').margin({ top: 30 }).fontSize(40).onClick(() => {
+          router.pushNamedRoute({ name:ConstantRouter.LOGIN_PAGE })
+        })
       }
       .width('100%')
     }
@@ -41,7 +47,8 @@ struct Index {
  * 按值传递
  * @param paramA1
  */
-@Builder function overBuilder(paramA1: string) {
+@Builder
+function overBuilder(paramA1: string) {
   Row() {
     Text(`UseStateVarByValue: ${paramA1} `)
   }

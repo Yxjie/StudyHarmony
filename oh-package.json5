@@ -12,6 +12,6 @@
   "dependencies": {
     //    "@ohos/pulltorefresh": "^2.0.5"
     "@module/common" : "file:../StudyHarmony/common",
-    "@module/login" : "file:../StudyHarmony/login"
+    "@module/login" : "file:../StudyHarmony/login",
   }
 }
